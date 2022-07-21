@@ -10,7 +10,7 @@ a {
 }
 
 body {
-    background-image: url(https://siviaggia.it/wp-content/uploads/sites/2/2020/05/viaggiare-treno-nuove-regole-fase-2.jpg);
+    background-image: url(https://www.sbb.ch/content/dam/internet/sharedimages/galerie/ff-galerie/gttos/Glacier-Express-Winter.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,6 +29,17 @@ main {
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+}
+
+.main_container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .main-container input {

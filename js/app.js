@@ -14,8 +14,8 @@ buttonElement.addEventListener('click',function (){
     }    
     if ( age > 65 ) {
         ticketPrice = ticketPrice * 0.6;
-    }    
-
+    }
+    
     ticket_price = document.getElementById('ticket_price');
 
     console.dir(ticket_price);
