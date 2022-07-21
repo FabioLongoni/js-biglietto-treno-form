@@ -1,11 +1,16 @@
 
+const buttonElement = document.querySelector('input[type="submit"]')
+console.log(buttonElement)
 
+buttonElement.addEventListener('click',function (){
+    alert('i am a button')
+})
 
-// //chiedere all'utente quanti km deve fare
-// let kmTravel = parseInt( ('how many km do you have to travel?') ) 
-// kmTravel = Math.abs(kmTravel)
+//chiedere all'utente quanti km deve fare
+let kmTravel  
+kmTravel = Math.abs(kmTravel)
 
-//chiedere all'utente quanti anni ha 
+// //chiedere all'utente quanti anni ha 
 // let age = parseInt( prompt('how old are you?') )
 
 // //controllare validità dei dati
