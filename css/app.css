@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    padding: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
