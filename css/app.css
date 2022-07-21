@@ -4,11 +4,45 @@
     box-sizing: border-box;
 }
 
-.main_container {
-    padding: 5rem;
-}
-
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+body {
+    background-image: url(https://siviaggia.it/wp-content/uploads/sites/2/2020/05/viaggiare-treno-nuove-regole-fase-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5rem;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 3rem;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.main-container input {
+    padding: 1rem;
+}
+
+#age, #distance, #button {
+    padding: 10px;
+}
+
+#button {
+    border-radius: 10px;
+}
+
+#ticket_price {
+    font-size: 2rem;
 }

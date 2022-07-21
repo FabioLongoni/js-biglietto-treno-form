@@ -1,23 +1,30 @@
 
+const oneKmPrice = 0.21
+
 const buttonElement = document.querySelector('input[type="submit"]');
 console.log(buttonElement);
 
 buttonElement.addEventListener('click',function (){
     let kmTravel = document.getElementById('distance');
-    let ticketPrice = parseFloat(kmTravel.value) * 0.21 ;
+    let ticketPrice = parseFloat(kmTravel.value) * oneKmPrice ;
     let age = document.getElementById('age').value;
+
     if ( age < 18 ) {
         ticketPrice = ticketPrice * 0.8;
-        console.log(ticketPrice);
     }    
     if ( age > 65 ) {
         ticketPrice = ticketPrice * 0.6;
-        console.log(ticketPrice);
     }    
 
+    ticket_price = document.getElementById('ticket_price');
+
+    console.dir(ticket_price);
+
+    ticket_price.innerHTML = 'il prezzo del biglietto è di: € ' + ticketPrice.toFixed(2);
 
     console.log(ticketPrice);
 })
+
 
 
 
