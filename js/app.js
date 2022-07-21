@@ -3,12 +3,33 @@ const buttonElement = document.querySelector('input[type="submit"]')
 console.log(buttonElement)
 
 buttonElement.addEventListener('click',function (){
-    alert('i am a button')
+    let kmTravel = document.querySelector('input[type="text-km"]')
+    let ticketPrice = parseFloat(kmTravel.value) * 0.21
+    let age = document.querySelector('input[type="text-age"]')
+
+    console.log(ticketPrice)
 })
 
+
+//se l'età è minore di 18
+if ( age < 18 ) {
+    ticketPrice = ticketPrice * 0.8
+    console.log(ticketPrice)
+}
+
+//se l'età è maggiore di 65
+if ( age > 65 ) {
+    ticketPrice = ticketPrice * 0.6
+    console.log(ticketPrice)
+}
+
+
+
+
+
 //chiedere all'utente quanti km deve fare
-let kmTravel  
-kmTravel = Math.abs(kmTravel)
+// let kmTravel  
+// kmTravel = Math.abs(kmTravel)
 
 // //chiedere all'utente quanti anni ha 
 // let age = parseInt( prompt('how old are you?') )
@@ -31,14 +52,4 @@ kmTravel = Math.abs(kmTravel)
 // console.log(kmTravel , age , ticketPrice)
 
 
-// //se l'età è minore di 18
-// if ( age < 18 ) {
-//     ticketPrice = ticketPrice * 0.8
-//     console.log(ticketPrice)
-// }
 
-// //se l'età è maggiore di 65
-// if ( age > 65 ) {
-//     ticketPrice = ticketPrice * 0.6
-//     console.log(ticketPrice)
-// }
